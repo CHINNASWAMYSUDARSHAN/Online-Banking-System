@@ -1,0 +1,82 @@
+/* operations.css */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    min-height: 100vh;
+}
+
+/* center card */
+.op-card {
+    width: 420px;
+    margin: 80px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* page title */
+.op-card h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* input fields */
+.op-card input[type="number"],
+.op-card input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* buttons */
+.op-card button,
+.op-card input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #3498db;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.op-card button:hover,
+.op-card input[type="submit"]:hover {
+    background: #2980b9;
+}
+
+/* success message */
+.success {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* error message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* back link */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

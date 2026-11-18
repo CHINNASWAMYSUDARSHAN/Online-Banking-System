@@ -1,0 +1,151 @@
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ---------- PAGE BACKGROUND ---------- */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb, #60a5fa);
+    background-size: 300% 300%;
+    animation: bgMove 10s ease infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ---------- MAIN CARD ---------- */
+body > * {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 30px 35px;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 900px;
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- HEADINGS ---------- */
+h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #1e40af;
+}
+
+/* ---------- FORMS ---------- */
+form {
+    margin-top: 10px;
+}
+
+label {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* ---------- BUTTONS ---------- */
+input[type="submit"] {
+    margin-top: 15px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.5);
+}
+
+/* ---------- TABLE ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover td {
+    background: #eff6ff;
+}
+
+/* ---------- MESSAGES ---------- */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* ---------- BACK LINK ---------- */
+a {
+    display: inline-block;
+    margin-top: 30px;
+
+    text-decoration: none;
+    background: linear-gradient(135deg, #64748b, #334155);
+    color: #ffffff;
+
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
